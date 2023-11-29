@@ -1,0 +1,7 @@
+node_modules/
+build/
+public/img
+public/favicon.png
+.vscode
+.DS_Store
+vue-material-dashboard-pro-v1.4.0/

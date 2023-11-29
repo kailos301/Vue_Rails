@@ -1,0 +1,254 @@
+Searching 171 files for "sidebar-wrapper"
+
+/home/alexlim/Documents/cswork/app/src/assets/scss/md/_responsive.scss:
+  122          box-shadow: none;
+  123  
+  124:         .sidebar-wrapper{
+  125              padding-bottom: 20px;
+  126          }
+
+/home/alexlim/Documents/cswork/app/src/assets/scss/md/_rtl.scss:
+   13          }
+   14  
+   15:         .sidebar-wrapper{
+   16            display: flex;
+   17            flex-direction: column;
+   ..
+   70      }
+   71  
+   72:     .sidebar .sidebar-wrapper .user .user-info [data-toggle="collapse"] ~ div > ul > li > a .sidebar-normal,
+   73:     .sidebar .sidebar-wrapper > .nav [data-toggle="collapse"] ~ div > ul > li > a .sidebar-normal{
+   74        text-align: right;
+   75      }
+   ..
+  195      }
+  196  
+  197:     .sidebar .sidebar-wrapper .user .user-info [data-toggle=collapse]~div ul > li > a .sidebar-mini {
+  198        margin-right: 0!important;
+  199        float: right!important;
+  ...
+  202  
+  203      @media (max-width: 991px){
+  204:         .sidebar .sidebar-wrapper > .nav [data-toggle="collapse"] ~ div > ul > li > .sidebar-normal,
+  205:         .sidebar .sidebar-wrapper .user .user-info [data-toggle="collapse"] ~ div > ul > li > .sidebar-normal{
+  206              text-align: right;
+  207          }
+  ...
+  236    }
+  237  
+  238:   .sidebar-wrapper {
+  239      .nav .nav-item,
+  240      .user .user-info {
+  ...
+  329  
+  330  @media (min-width: 991px){
+  331:     .sidebar-mini .rtl .sidebar .sidebar-wrapper > .nav [data-toggle="collapse"] ~ div > ul > li > a .sidebar-normal,
+  332:     .sidebar-mini .rtl .sidebar .sidebar-wrapper .user .user-info [data-toggle="collapse"] ~ div > ul > li > a .sidebar-normal,
+  333:     .sidebar-mini .rtl .sidebar .sidebar-wrapper .user .user-info > a > span,
+  334:     .sidebar-mini .rtl .sidebar .sidebar-wrapper > .nav li > a p{
+  335          position: relative;
+  336      }
+  337  
+  338:     .sidebar-mini .rtl .sidebar:hover .sidebar-wrapper > .nav li > a p,
+  339:     .sidebar-mini .rtl .sidebar:hover .sidebar-wrapper > .nav [data-toggle="collapse"] ~ div > ul > li > a .sidebar-normal,
+  340:     .sidebar-mini .rtl .sidebar:hover .sidebar-wrapper .user .user-info [data-toggle="collapse"] ~ div > ul > li > a .sidebar-normal,
+  341:     .sidebar-mini .rtl .sidebar:hover .sidebar-wrapper .user .user-info > a > span,
+  342:     .sidebar-mini .rtl .sidebar .sidebar-wrapper > .nav [data-toggle="collapse"] ~ div > ul > li > a .sidebar-normal,
+  343:     .sidebar-mini .rtl .sidebar .sidebar-wrapper .user .user-info [data-toggle="collapse"] ~ div > ul > li > a .sidebar-normal,
+  344:     .sidebar-mini .rtl .sidebar .sidebar-wrapper .user .user-info > a > span,
+  345:     .sidebar-mini .rtl .sidebar .sidebar-wrapper > .nav li > a p,
+  346      .sidebar-mini .rtl .sidebar .logo a.logo-normal{
+  347        transform: translateX(25px);
+  348      }
+  349  
+  350:     .sidebar-mini .rtl .sidebar:hover .sidebar-wrapper > .nav li > a p,
+  351:     .sidebar-mini .rtl .sidebar:hover .sidebar-wrapper > .nav [data-toggle="collapse"] ~ div > ul > li > a .sidebar-normal,
+  352:     .sidebar-mini .rtl .sidebar:hover .sidebar-wrapper .user .user-info [data-toggle="collapse"] ~ div > ul > li > a .sidebar-normal,
+  353:     .sidebar-mini .rtl .sidebar:hover .sidebar-wrapper .user .user-info > a > span,
+  354      .sidebar-mini .rtl .sidebar:hover .logo a.logo-normal{
+  355        transform: translate3d(0,0,0);
+
+/home/alexlim/Documents/cswork/app/src/assets/scss/md/_sidebar-and-main-panel.scss:
+  137  
+  138  
+  139:     .sidebar-wrapper{
+  140          position: relative;
+  141          height: calc(100vh - 75px);
+  ...
+  636  .sidebar,
+  637  .main-panel,
+  638: .sidebar-wrapper{
+  639      transition-property: top,bottom, width, background-image;
+  640      transition-duration: .2s,.2s, .35s, .30s;
+  ...
+  664  
+  665          .sidebar,
+  666:         .sidebar .sidebar-wrapper{
+  667              width: 80px;
+  668          }
+  ...
+  684              }
+  685  
+  686:             .sidebar-wrapper{
+  687                  > .nav [data-toggle="collapse"] ~ div > ul > li > a .sidebar-normal,
+  688                  .user .user-info [data-toggle="collapse"] ~ div > ul > li > a .sidebar-normal,
+  ...
+  709              }
+  710  
+  711:             .sidebar-wrapper{
+  712                  width: 150px;
+  713  
+
+/home/alexlim/Documents/cswork/app/src/components/SidebarPlugin/Find Results:
+    3  0 matches
+    4  
+    5: Searching 49 files for "sidebar-wrapper"
+    6  
+    7  /home/alexlim/Documents/cswork/app/src/pages/Layout/DashboardLayout.vue:
+    8     58      // if we are on windows OS we activate the perfectScrollbar function
+    9     59      initScrollbar("sidebar");
+   10:    60:     initScrollbar("sidebar-wrapper");
+   11     61      initScrollbar("main-panel");
+   12     62      docClasses.add("perfect-scrollbar-on");
+   ..
+   39     41                 margin-right: 23px;
+   40     ..
+   41:   344      .sidebar-mini .rtl .sidebar .sidebar-wrapper .user .user-info > a > span,
+   42:   345      .sidebar-mini .rtl .sidebar .sidebar-wrapper > .nav li > a p,
+   43    346:     .sidebar-mini .rtl .sidebar .logo a.logo-normal{
+   44    347        transform: translateX(25px);
+   45    348      }
+   46    ...
+   47:   352      .sidebar-mini .rtl .sidebar:hover .sidebar-wrapper .user .user-info [data-toggle="collapse"] ~ div > ul > li > a .sidebar-normal,
+   48:   353      .sidebar-mini .rtl .sidebar:hover .sidebar-wrapper .user .user-info > a > span,
+   49    354:     .sidebar-mini .rtl .sidebar:hover .logo a.logo-normal{
+   50    355        transform: translate3d(0,0,0);
+   ..
+  179  
+  180  
+  181: Searching 170 files for "sidebar-wrapper"
+  182  
+  183  /home/alexlim/Documents/cswork/app/src/assets/scss/md/_responsive.scss:
+  184    122          box-shadow: none;
+  185    123  
+  186:   124:         .sidebar-wrapper{
+  187    125              padding-bottom: 20px;
+  188    126          }
+  ...
+  191     13          }
+  192     14  
+  193:    15:         .sidebar-wrapper{
+  194     16            display: flex;
+  195     17            flex-direction: column;
+  ...
+  197     70      }
+  198     71  
+  199:    72:     .sidebar .sidebar-wrapper .user .user-info [data-toggle="collapse"] ~ div > ul > li > a .sidebar-normal,
+  200:    73:     .sidebar .sidebar-wrapper > .nav [data-toggle="collapse"] ~ div > ul > li > a .sidebar-normal{
+  201     74        text-align: center;
+  202     75      }
+  ...
+  204    195      }
+  205    196  
+  206:   197:     .sidebar .sidebar-wrapper .user .user-info [data-toggle=collapse]~div ul > li > a .sidebar-mini {
+  207    198        margin-right: 0!important;
+  208    199        float: right!important;
+  ...
+  210    202  
+  211    203      @media (max-width: 991px){
+  212:   204:         .sidebar .sidebar-wrapper > .nav [data-toggle="collapse"] ~ div > ul > li > .sidebar-normal,
+  213:   205:         .sidebar .sidebar-wrapper .user .user-info [data-toggle="collapse"] ~ div > ul > li > .sidebar-normal{
+  214    206              text-align: center;
+  215    207          }
+  ...
+  217    236    }
+  218    237  
+  219:   238:   .sidebar-wrapper {
+  220    239      .nav .nav-item,
+  221    240      .user .user-info {
+  ...
+  223    329  
+  224    330  @media (min-width: 991px){
+  225:   331:     .sidebar-mini .rtl .sidebar .sidebar-wrapper > .nav [data-toggle="collapse"] ~ div > ul > li > a .sidebar-normal,
+  226:   332:     .sidebar-mini .rtl .sidebar .sidebar-wrapper .user .user-info [data-toggle="collapse"] ~ div > ul > li > a .sidebar-normal,
+  227:   333:     .sidebar-mini .rtl .sidebar .sidebar-wrapper .user .user-info > a > span,
+  228:   334:     .sidebar-mini .rtl .sidebar .sidebar-wrapper > .nav li > a p{
+  229    335          position: relative;
+  230    336      }
+  231    337  
+  232:   338:     .sidebar-mini .rtl .sidebar:hover .sidebar-wrapper > .nav li > a p,
+  233:   339:     .sidebar-mini .rtl .sidebar:hover .sidebar-wrapper > .nav [data-toggle="collapse"] ~ div > ul > li > a .sidebar-normal,
+  234:   340:     .sidebar-mini .rtl .sidebar:hover .sidebar-wrapper .user .user-info [data-toggle="collapse"] ~ div > ul > li > a .sidebar-normal,
+  235:   341:     .sidebar-mini .rtl .sidebar:hover .sidebar-wrapper .user .user-info > a > span,
+  236:   342:     .sidebar-mini .rtl .sidebar .sidebar-wrapper > .nav [data-toggle="collapse"] ~ div > ul > li > a .sidebar-normal,
+  237:   343:     .sidebar-mini .rtl .sidebar .sidebar-wrapper .user .user-info [data-toggle="collapse"] ~ div > ul > li > a .sidebar-normal,
+  238:   344:     .sidebar-mini .rtl .sidebar .sidebar-wrapper .user .user-info > a > span,
+  239:   345:     .sidebar-mini .rtl .sidebar .sidebar-wrapper > .nav li > a p,
+  240    346      .sidebar-mini .rtl .sidebar .logo a.logo-normal{
+  241    347        transform: translateX(25px);
+  242    348      }
+  243    349  
+  244:   350:     .sidebar-mini .rtl .sidebar:hover .sidebar-wrapper > .nav li > a p,
+  245:   351:     .sidebar-mini .rtl .sidebar:hover .sidebar-wrapper > .nav [data-toggle="collapse"] ~ div > ul > li > a .sidebar-normal,
+  246:   352:     .sidebar-mini .rtl .sidebar:hover .sidebar-wrapper .user .user-info [data-toggle="collapse"] ~ div > ul > li > a .sidebar-normal,
+  247:   353:     .sidebar-mini .rtl .sidebar:hover .sidebar-wrapper .user .user-info > a > span,
+  248    354      .sidebar-mini .rtl .sidebar:hover .logo a.logo-normal{
+  249    355        transform: translate3d(0,0,0);
+  ...
+  252    137  
+  253    138  
+  254:   139:     .sidebar-wrapper{
+  255    140          position: relative;
+  256    141          height: calc(100vh - 75px);
+  ...
+  258    636  .sidebar,
+  259    637  .main-panel,
+  260:   638: .sidebar-wrapper{
+  261    639      transition-property: top,bottom, width, background-image;
+  262    640      transition-duration: .2s,.2s, .35s, .30s;
+  ...
+  264    664  
+  265    665          .sidebar,
+  266:   666:         .sidebar .sidebar-wrapper{
+  267    667              width: 80px;
+  268    668          }
+  ...
+  270    684              }
+  271    685  
+  272:   686:             .sidebar-wrapper{
+  273    687                  > .nav [data-toggle="collapse"] ~ div > ul > li > a .sidebar-normal,
+  274    688                  .user .user-info [data-toggle="collapse"] ~ div > ul > li > a .sidebar-normal,
+  ...
+  276    709              }
+  277    710  
+  278:   711:             .sidebar-wrapper{
+  279    712                  width: 150px;
+  280    713  
+  ...
+  283     15        </a>
+  284     16      </div>
+  285:    17:     <div class="sidebar-wrapper" ref="sidebarScrollArea">
+  286     18        <slot></slot>
+  287     19        <md-list class="nav">
+  ...
+  290     58      // if we are on windows OS we activate the perfectScrollbar function
+  291     59      initScrollbar("sidebar");
+  292:    60:     initScrollbar("sidebar-wrapper");
+  293     61      initScrollbar("main-panel");
+  294     62      docClasses.add("perfect-scrollbar-on");
+
+/home/alexlim/Documents/cswork/app/src/components/SidebarPlugin/SideBar.vue:
+   15        </a>
+   16      </div>
+   17:     <div class="sidebar-wrapper" ref="sidebarScrollArea">
+   18        <slot></slot>
+   19        <md-list class="nav">
+
+/home/alexlim/Documents/cswork/app/src/pages/Layout/DashboardLayout.vue:
+   58      // if we are on windows OS we activate the perfectScrollbar function
+   59      initScrollbar("sidebar");
+   60:     initScrollbar("sidebar-wrapper");
+   61      initScrollbar("main-panel");
+   62      docClasses.add("perfect-scrollbar-on");
+
+69 matches across 6 files

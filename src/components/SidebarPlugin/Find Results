@@ -1,0 +1,296 @@
+Searching 49 files for ""logo"
+
+0 matches
+
+Searching 49 files for "sidebar-wrapper"
+
+/home/alexlim/Documents/cswork/app/src/pages/Layout/DashboardLayout.vue:
+   58      // if we are on windows OS we activate the perfectScrollbar function
+   59      initScrollbar("sidebar");
+   60:     initScrollbar("sidebar-wrapper");
+   61      initScrollbar("main-panel");
+   62      docClasses.add("perfect-scrollbar-on");
+
+1 match in 1 file
+
+
+Searching 170 files for "logo"
+
+/home/alexlim/Documents/cswork/app/src/assets/scss/md/_navbars.scss:
+  119        border-bottom: 0;
+  120  
+  121:       .logo-container .brand{
+  122            color: $white-color;
+  123        }
+
+/home/alexlim/Documents/cswork/app/src/assets/scss/md/_responsive.scss:
+  277          }
+  278  
+  279:         .logo{
+  280              position: relative;
+  281              z-index: 4;
+
+/home/alexlim/Documents/cswork/app/src/assets/scss/md/_rtl.scss:
+   36          }
+   37  
+   38:         .logo{
+   39:             a.logo-mini{
+   40                 float: right;
+   41                 margin-right: 23px;
+   ..
+  344      .sidebar-mini .rtl .sidebar .sidebar-wrapper .user .user-info > a > span,
+  345      .sidebar-mini .rtl .sidebar .sidebar-wrapper > .nav li > a p,
+  346:     .sidebar-mini .rtl .sidebar .logo a.logo-normal{
+  347        transform: translateX(25px);
+  348      }
+  ...
+  352      .sidebar-mini .rtl .sidebar:hover .sidebar-wrapper .user .user-info [data-toggle="collapse"] ~ div > ul > li > a .sidebar-normal,
+  353      .sidebar-mini .rtl .sidebar:hover .sidebar-wrapper .user .user-info > a > span,
+  354:     .sidebar-mini .rtl .sidebar:hover .logo a.logo-normal{
+  355        transform: translate3d(0,0,0);
+  356      }
+
+/home/alexlim/Documents/cswork/app/src/assets/scss/md/_sidebar-and-main-panel.scss:
+  201      }
+  202  
+  203:     .logo-tim{
+  204          border-radius: 50%;
+  205          border: 1px solid #333;
+  ...
+  307      }
+  308  
+  309:     .logo{
+  310          padding: 15px 0px;
+  311          margin: 0;
+  ...
+  314          z-index: 4;
+  315  
+  316:         a.logo-mini,
+  317:         a.logo-normal{
+  318              @extend .animation-transition-general;
+  319          }
+  320  
+  321:         a.logo-mini{
+  322              opacity: 1;
+  323              float: left;
+  ...
+  330          }
+  331  
+  332:         a.logo-normal{
+  333              display: block;
+  334              opacity: 1;
+  ...
+  371              }
+  372  
+  373:             .logo-img{
+  374                display: flex;
+  375                align-items: center;
+  ...
+  461      }
+  462  
+  463:     .logo-tim{
+  464          border-radius: 50%;
+  465          border: 1px solid #333;
+  ...
+  501      }
+  502      &[data-background-color="white"] {
+  503:         .logo .simple-text,
+  504:         .logo .simple-text:hover,
+  505:         .logo .simple-text:focus{
+  506            color: $black-color !important;
+  507          }
+  ...
+  563        }
+  564  
+  565:       .logo:after,
+  566        .user:after {
+  567          background-color: rgba(255, 255, 255, 0.3);
+  ...
+  677              z-index: 9999;
+  678  
+  679:             .logo{
+  680:                 a.logo-normal{
+  681                      opacity: 0;
+  682                      @include transform-translate-x(-25px);
+  ...
+  702              }
+  703  
+  704:             .logo{
+  705:                 a.logo-normal{
+  706                      opacity: 1;
+  707                      @include transform-translate-x(0px);
+
+/home/alexlim/Documents/cswork/app/src/components/SidebarPlugin/SideBar.vue:
+    7      :style="sidebarStyle"
+    8    >
+    9:     <div class="logo">
+   10:       <a href="#" class="simple-text logo-mini" target="_blank">
+   11:         <div class="logo-img">
+   12:           <img :src="logo" />
+   13          </div>
+   14        </a>
+   15:       <a href="#" class="simple-text logo-normal" target="_blank">
+   16          <template v-if="$route.meta.rtlActive">{{ rtlTitle }}</template>
+   17          <template v-else>{{ title }}</template>
+   ..
+   96        }
+   97      },
+   98:     logo: {
+   99        type: String,
+  100:       default: "./img/vue-logo.png"
+  101      },
+  102      sidebarLinks: {
+
+/home/alexlim/Documents/cswork/app/src/pages/Layout/TopNavbar.vue:
+   37                <li><a href="#" class="md-black" style="font-size: 12px; font-weight: 600;">Admin/User</a></li>
+   38                <li><a href="#/pages/user" class="md-black" style="font-size: 12px; font-weight: 600;">Profile</a></li>
+   39:               <li><a href="#" class="md-black" style="font-size: 12px; font-weight: 600;">logout</a></li>
+   40              </ul>
+   41            </drop-down>
+
+/home/alexlim/Documents/cswork/app/src/store/modules/auth.module.js:
+    3  import {
+    4    LOGIN,
+    5:   LOGOUT,
+    6    REGISTER,
+    7    CHECK_AUTH,
+    .
+   38      });
+   39    },
+   40:   [LOGOUT](context) {
+   41      context.commit(PURGE_AUTH);
+   42    },
+
+/home/alexlim/Documents/cswork/app/src/store/types/actions.type.js:
+    2  export const CHECK_AUTH = "checkAuth";
+    3  export const LOGIN = "login";
+    4: export const LOGOUT = "logout";
+    5  export const REGISTER = "register";
+    6  export const UPDATE_USER = "updateUser";
+
+/home/alexlim/Documents/cswork/app/src/store/types/mutations.type.js:
+    1  //auth-------------------------------------------
+    2  export const SET_AUTH = "setUser";
+    3: export const PURGE_AUTH = "logOut";
+    4  //common------------------------------------------
+    5  export const SET_ERROR = "setError";
+
+37 matches across 9 files
+
+
+Searching 170 files for "sidebar-wrapper"
+
+/home/alexlim/Documents/cswork/app/src/assets/scss/md/_responsive.scss:
+  122          box-shadow: none;
+  123  
+  124:         .sidebar-wrapper{
+  125              padding-bottom: 20px;
+  126          }
+
+/home/alexlim/Documents/cswork/app/src/assets/scss/md/_rtl.scss:
+   13          }
+   14  
+   15:         .sidebar-wrapper{
+   16            display: flex;
+   17            flex-direction: column;
+   ..
+   70      }
+   71  
+   72:     .sidebar .sidebar-wrapper .user .user-info [data-toggle="collapse"] ~ div > ul > li > a .sidebar-normal,
+   73:     .sidebar .sidebar-wrapper > .nav [data-toggle="collapse"] ~ div > ul > li > a .sidebar-normal{
+   74        text-align: center;
+   75      }
+   ..
+  195      }
+  196  
+  197:     .sidebar .sidebar-wrapper .user .user-info [data-toggle=collapse]~div ul > li > a .sidebar-mini {
+  198        margin-right: 0!important;
+  199        float: right!important;
+  ...
+  202  
+  203      @media (max-width: 991px){
+  204:         .sidebar .sidebar-wrapper > .nav [data-toggle="collapse"] ~ div > ul > li > .sidebar-normal,
+  205:         .sidebar .sidebar-wrapper .user .user-info [data-toggle="collapse"] ~ div > ul > li > .sidebar-normal{
+  206              text-align: center;
+  207          }
+  ...
+  236    }
+  237  
+  238:   .sidebar-wrapper {
+  239      .nav .nav-item,
+  240      .user .user-info {
+  ...
+  329  
+  330  @media (min-width: 991px){
+  331:     .sidebar-mini .rtl .sidebar .sidebar-wrapper > .nav [data-toggle="collapse"] ~ div > ul > li > a .sidebar-normal,
+  332:     .sidebar-mini .rtl .sidebar .sidebar-wrapper .user .user-info [data-toggle="collapse"] ~ div > ul > li > a .sidebar-normal,
+  333:     .sidebar-mini .rtl .sidebar .sidebar-wrapper .user .user-info > a > span,
+  334:     .sidebar-mini .rtl .sidebar .sidebar-wrapper > .nav li > a p{
+  335          position: relative;
+  336      }
+  337  
+  338:     .sidebar-mini .rtl .sidebar:hover .sidebar-wrapper > .nav li > a p,
+  339:     .sidebar-mini .rtl .sidebar:hover .sidebar-wrapper > .nav [data-toggle="collapse"] ~ div > ul > li > a .sidebar-normal,
+  340:     .sidebar-mini .rtl .sidebar:hover .sidebar-wrapper .user .user-info [data-toggle="collapse"] ~ div > ul > li > a .sidebar-normal,
+  341:     .sidebar-mini .rtl .sidebar:hover .sidebar-wrapper .user .user-info > a > span,
+  342:     .sidebar-mini .rtl .sidebar .sidebar-wrapper > .nav [data-toggle="collapse"] ~ div > ul > li > a .sidebar-normal,
+  343:     .sidebar-mini .rtl .sidebar .sidebar-wrapper .user .user-info [data-toggle="collapse"] ~ div > ul > li > a .sidebar-normal,
+  344:     .sidebar-mini .rtl .sidebar .sidebar-wrapper .user .user-info > a > span,
+  345:     .sidebar-mini .rtl .sidebar .sidebar-wrapper > .nav li > a p,
+  346      .sidebar-mini .rtl .sidebar .logo a.logo-normal{
+  347        transform: translateX(25px);
+  348      }
+  349  
+  350:     .sidebar-mini .rtl .sidebar:hover .sidebar-wrapper > .nav li > a p,
+  351:     .sidebar-mini .rtl .sidebar:hover .sidebar-wrapper > .nav [data-toggle="collapse"] ~ div > ul > li > a .sidebar-normal,
+  352:     .sidebar-mini .rtl .sidebar:hover .sidebar-wrapper .user .user-info [data-toggle="collapse"] ~ div > ul > li > a .sidebar-normal,
+  353:     .sidebar-mini .rtl .sidebar:hover .sidebar-wrapper .user .user-info > a > span,
+  354      .sidebar-mini .rtl .sidebar:hover .logo a.logo-normal{
+  355        transform: translate3d(0,0,0);
+
+/home/alexlim/Documents/cswork/app/src/assets/scss/md/_sidebar-and-main-panel.scss:
+  137  
+  138  
+  139:     .sidebar-wrapper{
+  140          position: relative;
+  141          height: calc(100vh - 75px);
+  ...
+  636  .sidebar,
+  637  .main-panel,
+  638: .sidebar-wrapper{
+  639      transition-property: top,bottom, width, background-image;
+  640      transition-duration: .2s,.2s, .35s, .30s;
+  ...
+  664  
+  665          .sidebar,
+  666:         .sidebar .sidebar-wrapper{
+  667              width: 80px;
+  668          }
+  ...
+  684              }
+  685  
+  686:             .sidebar-wrapper{
+  687                  > .nav [data-toggle="collapse"] ~ div > ul > li > a .sidebar-normal,
+  688                  .user .user-info [data-toggle="collapse"] ~ div > ul > li > a .sidebar-normal,
+  ...
+  709              }
+  710  
+  711:             .sidebar-wrapper{
+  712                  width: 150px;
+  713  
+
+/home/alexlim/Documents/cswork/app/src/components/SidebarPlugin/SideBar.vue:
+   15        </a>
+   16      </div>
+   17:     <div class="sidebar-wrapper" ref="sidebarScrollArea">
+   18        <slot></slot>
+   19        <md-list class="nav">
+
+/home/alexlim/Documents/cswork/app/src/pages/Layout/DashboardLayout.vue:
+   58      // if we are on windows OS we activate the perfectScrollbar function
+   59      initScrollbar("sidebar");
+   60:     initScrollbar("sidebar-wrapper");
+   61      initScrollbar("main-panel");
+   62      docClasses.add("perfect-scrollbar-on");
+
+31 matches across 5 files
